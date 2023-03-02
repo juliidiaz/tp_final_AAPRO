@@ -1,0 +1,157 @@
+    /*HEADER*/
+body {
+    background-color: #EFEDE7;}
+.header_gral {
+    background-image: url(/media/celular.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    height: 700px;}
+
+.logo {
+    height: 30%;
+    margin-top: 10%;}
+
+.titulo_header {
+    font-family: special elite;
+    font-size: 15px;
+    font-weight: bold;}
+
+.subtitulo_header {
+    font-family: caveat;
+    font-size:x-large;}
+
+    /*OPCIONES*/
+
+.container_opciones {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;}
+
+.img_opciones {
+    width:40%;}
+
+.text_opciones {
+    font-family: special elite;
+    font-size:22px;
+    font-weight: bold;
+    text-align: center;
+    width: 55%;}
+
+    /*DESCRIPCION*/
+
+.cont_descrip {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    height: 400px;}
+
+.descrip_1 {
+    justify-content:center;}
+
+.descrip_2 {
+    background-image: url(/media/7.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:160%;}
+
+.text_descrip {
+    font-family: special elite;
+    font-size:22px;
+    font-weight: bold;
+    text-align: center;
+    width: 80%;}
+
+.img_descrip{
+    height: 100%;}
+
+.img_descrip_icon {
+    width: 20%;}
+
+
+/*DISEÑOS 1*/
+
+.cont_gral_disenos {
+    background-color: #EFEDE7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;}
+.card-body {
+    text-align: center;}
+.card-title {
+    font-family: caveat;
+    font-size: xx-large;}
+.card_propio {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    width: 85%;}
+
+    /*DISEÑOS 2*/
+.disenos_cont {
+    height: 350px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: center;
+    background-size:cover;   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;}
+.dis_1 {
+    background-image: url(/media/cas.png);}
+.dis_2 {
+    background-image: url(/media/quin.png);}
+.dis_3 {
+    background-image: url(/media/gradu2.png);}
+
+    /*FOOTER*/
+
+.section_footer {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;}
+
+.sec_foot {
+    font-size: x-small;
+    text-align: start;}
+    
+.logo_footer{
+    height:95px;}
+.icon_footer {
+ height: 30px;
+}
+
+    /*MEDIA QUERY*/
+@media (min-width:768px) and (max-width:1024px) {
+ 
+        .text_descrip{
+            width: 90%;}
+        .descrip_2 {
+            background-size:129%;}}
+    
+@media (min-width:1024px) {
+        .cont_descrip {
+            height:450px;}
+        .text_descrip {
+           margin-top:55px;}}
+
+@media (min-width:768px) {
+    .descrip_1 {
+        justify-content: center;}
+    .card_propio {
+            width: 100%;}
+    .sec_foot {padding-top: 20px;}}
