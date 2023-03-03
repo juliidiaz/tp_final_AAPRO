@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Special+Elite&display=swap" rel="stylesheet">
 
     
@@ -57,57 +57,93 @@
        </div> 
     </main>
 
-    <!--MODELO DE DISEÑOS 1-->
+    <!--CARROUSEL-->
     <div class="container">
-    <div class="row">
-        <div class="col-12 col-md-4 cont_gral_disenos">
-            <div class="card card_propio">
-                <img src="/media/cas.png" class="card-img-top" >
-                <div class="card-body">
-                  <h5 class="card-title">Casamiento</h5>
-                  <a href="#" class="btn btn-secondary btn-sm">Ver ejemplo</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-md-4 cont_gral_disenos">
-            <div class="card card_propio">
-                <img src="/media/quin.png" class="card-img-top" >
-                <div class="card-body">
-                  <h5 class="card-title">Cumpleaños</h5>
-                  <a href="#" class="btn btn-secondary btn-sm">Ver ejemplo</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-md-4 cont_gral_disenos">
-            <div class="card card_propio">
-                <img src="/media/gradu2.png" class="card-img-top" >
-                <div class="card-body">
-                  <h5 class="card-title">Graduación</h5>
-                  <a href="#" class="btn btn-secondary btn-sm">Ver ejemplo</a>
-                </div>
+        <div class="row">
+            <div class="col-12">
+                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="./media/cas.png" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./media/quin.png" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./media/gradu.png" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
             </div>
         </div>
     </div>
+
+    <!--ACORDEÓN-->
+    <div class="container">
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              ¿Cuánto tiempo debo esperar?
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+             ¿Qué opciones de diseño le puedo agregar a la tarjeta?
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+              ¿Cuánto me sale realizar la tarjeta?
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+          </div>
+        </div>
+        </div>
     </div>
 
-
-    <!--MODELO DE DISEÑOS 2-->
-    <section>
+    <!--DISEÑOs-->
+    <section >
         <div class="container">
-            <div class="row disenos_gral">
-                <div class="col-12 col-md-4 disenos_cont dis_1">
-                    <h5 class="card-title">Cumpleaños</h5>
-                    <a href="#" class="btn btn-secondary btn-sm">Ver ejemplo</a>
+            <div class="row">
+                <div class="col-12 diseno_gral">
+                    <div class="dis_1 disenos_cont">
+                        <h5 class="card-title">Casamiento</h5>
+                        <a href="/casamiento.html" class="btn btn-secondary btn-sm">Ver ejemplo</a>
                     </div>
-                <div class="col-12 col-md-4 disenos_cont dis_2">
-                    <h5 class="card-title">Cumpleaños</h5>
-                    <a href="#" class="btn btn-secondary btn-sm">Ver ejemplo</a>
+
+                    <div class="dis_2 disenos_cont">
+                        <h5 class="card-title">Quince años</h5>
+                        <a href="#" class="btn btn-secondary btn-sm">Ver ejemplo</a>
                     </div>
-                <div class="col-12 col-md-4 disenos_cont dis_3">
-                        <h5 class="card-title">Cumpleaños</h5>
-                    <a href="#" class="btn btn-secondary btn-sm">Ver ejemplo</a>
+
+                    <div class="dis_3 disenos_cont">
+                        <h5 class="card-title">Graduación</h5>
+                        <a href="#" class="btn btn-secondary btn-sm">Ver ejemplo</a>
                     </div>
+                </div>
             </div>
+                
         </div>
     </section>
     
@@ -120,7 +156,9 @@
                         Para realizar el pedido de la invitación, ingresá al siguiente link y completá el formulario.
                         Nos comunicaremos a la brevedad.
                     </p>
-                    <img class="img_descrip_icon" src="/media/8.png" alt="">
+                    <button class="boton_modal" data-bs-toggle="modal" data-bs-target="#modal_contacto"> <img class="img_descrip_icon" src="/media/8.png"></button>
+                       
+                    
                 </div>
                 <div class="col-12 col-md-6 cont_descrip descrip_2">
                 </div>
@@ -128,13 +166,68 @@
         </div>
     </section>
 
+    <!--MODAL-->
+    <div id="modal_contacto" class="modal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Contacto</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              
+                <form>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Inserte su E-mail</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <div id="emailHelp" class="form-text">Nos contactaremos a través del e-mail ingresado</div>
+                    </div> 
+        
+                    <label for="exampleInputEmail1" class="form-label">¿Sobre qué tipo de invitación deseas recibir información?
+        
+                    <div class="form-check">          
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Casamiento
+                        </label>
+                    </div>
+        
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                        <label class="form-check-label" for="flexCheckChecked">
+                          Cumpleaños de 15
+                        </label>
+                    </div>
+                    
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                        <label class="form-check-label" for="flexCheckChecked">
+                          Graduación
+                        </label>
+                    </div>
+        
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">¿Quisieras contarnos algo mas?</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                </form>
+
+            </div>
+            <div class="modal-footer">
+                <button type="submit" class="btn btn-primary boton_modal_color">Enviar consulta</button>
+              <button type="button" class="btn btn-secondary boton_modal_color" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
     <!--FOOTER-->
     <div class="container-flex">
         <div class="row">
-            <div class="col-12 col-md-3 section_footer">
+            <div class="col-4 col-md-3 section_footer">
                 <img class="logo_footer" src="/media/logosinfondo.png">
             </div>
-            <div class="col-6 col-md-3 section_footer sec_foot">
+            <div class="col-4 col-md-3 section_footer sec_foot">
                 <p>DISEÑOS</p>
                 <ul>
                     <li>Casamientos</li>
@@ -142,7 +235,7 @@
                     <li>Graduaciones</li>
                 </ul>
             </div>
-            <div class="col-6 col-md-3 section_footer sec_foot">      
+            <div class="col-4 col-md-3 section_footer sec_foot">      
                 <p>SECCIONES</p>
                 <ul>
                     <li>Opciones</li>
@@ -157,9 +250,13 @@
                     <img class="icon_footer" src="/media/whatsapp.png" alt="">
                     <img class="icon_footer" src="/media/gmail.png" alt="">
                 </div>
-                <a href="">doucediseno@gmail.com</a>
+                <a class="mail_footer" href="">doucediseno@gmail.com</a>
             </div> 
         </div>
     </div>
+
+
+    <script src="./JS/javascript.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>
