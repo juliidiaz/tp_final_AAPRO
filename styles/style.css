@@ -3,7 +3,7 @@ body {
     background-color: #EFEDE7;}
 
 .header_gral {
-    background-image: url(/media/celular.png);
+    background-image: url(./media/celular.png);
     background-size:cover;
     background-repeat: no-repeat;
     display: flex;
@@ -63,7 +63,7 @@ body {
     justify-content:center;}
 
 .descrip_2 {
-    background-image: url(/media/7.png);
+    background-image: url(./media/7.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size:160%;}
@@ -93,7 +93,7 @@ body {
 
     /*DISEÑOS*/
 .diseno_gral{
-    height: 850px;
+    height: 680px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -101,7 +101,7 @@ body {
 
 .disenos_cont {
     height: 95%;
-    width: 95%;
+    width: 70%;
     background-repeat: no-repeat;
     background-position-y: center;
     background-position-x: center;
@@ -117,13 +117,13 @@ body {
     font-size: xx-large;}
 
 .dis_1 {
-    background-image: url(/media/cas.png);}
+    background-image: url(./media/cas.png);}
 
 .dis_2 {
-    background-image: url(/media/quin.png);}
+    background-image: url(./media/quin.png);}
 
 .dis_3 {
-    background-image: url(/media/gradu2.png);}
+    background-image: url(./media/gradu2.png);}
 
     .disenos_cont:hover{
         filter: grayscale(95%);
@@ -133,17 +133,19 @@ body {
 
     /*PRECIO*/
 .cont_precio {
-    height: 300px;
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;}
+    height: 200px;
+    width: 90%;}
+
+.img_precio {
+    background-image: url(./media/precio2.png);
+    background-size: contain;}
 
 .base {
-    background-image: url(../media/precio1.png);}
+    background-color: lightseagreen;}
     
 
 .combo {
-    background-image: url(../media/precio2.png);}
+    background-color: gainsboro;}
 
 
     /*FOOTER*/
