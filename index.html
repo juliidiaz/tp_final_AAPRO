@@ -17,7 +17,7 @@
         <div class="container-flex">
             <div class="row">
                 <div class="col-md-12 header_gral">
-                    <img class="logo" src="../media/logosinfondo.png">
+                    <img class="logo" src="/media/logosinfondo.png">
                     <p class="titulo_header">Invitaciones interactivas</p>
                     <p class="subtitulo_header">Facil y rápido</p>
                 </div>
@@ -28,7 +28,7 @@
     <!--BAJO HEADER-->
     <main>
        <div class="container-flex">
-        <div class="row opciones_gral">
+        <div class="row opciones_gral" id="opciones">
             <div class="col-6 col-md-4 container_opciones">
                 <img src="/media/1.png" class="img_opciones" alt="">
                 <p class="text_opciones">Carrusel de fotos</p>
@@ -58,19 +58,16 @@
     </main>
 
     <!--CARROUSEL-->
-    <div class="container">
+    <div class="container" id="beneficios">
         <div class="row">
             <div class="col-12">
                 <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                       <div class="carousel-item active">
-                        <img src="./media/cas.png" class="d-block w-100" alt="...">
+                        <img src="./media/prop1.png" class="d-block w-100" alt="...">
                       </div>
                       <div class="carousel-item">
-                        <img src="./media/quin.png" class="d-block w-100" alt="...">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="./media/gradu.png" class="d-block w-100" alt="...">
+                        <img src="./media/prop2.png" class="d-block w-100" alt="...">
                       </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
@@ -127,17 +124,17 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 diseno_gral">
-                    <div class="dis_1 disenos_cont">
+                    <div class="dis_1 disenos_cont" id="prueba">
                         <h5 class="card-title">Casamiento</h5>
                         <a href="/casamiento.html" class="btn btn-secondary btn-sm">Ver ejemplo</a>
                     </div>
 
-                    <div class="dis_2 disenos_cont">
+                    <div class="dis_2 disenos_cont" id="cumpleanos">
                         <h5 class="card-title">Quince años</h5>
                         <a href="#" class="btn btn-secondary btn-sm">Ver ejemplo</a>
                     </div>
 
-                    <div class="dis_3 disenos_cont">
+                    <div class="dis_3 disenos_cont" id="graduaciones">
                         <h5 class="card-title">Graduación</h5>
                         <a href="#" class="btn btn-secondary btn-sm">Ver ejemplo</a>
                     </div>
@@ -165,6 +162,9 @@
             </div>
         </div>
     </section>
+
+    <!--PRECIO-->
+
 
     <!--MODAL-->
     <div id="modal_contacto" class="modal" tabindex="-1">
@@ -221,6 +221,7 @@
         </div>
       </div>
 
+
     <!--FOOTER-->
     <div class="container-flex">
         <div class="row">
@@ -230,25 +231,32 @@
             <div class="col-4 col-md-3 section_footer sec_foot">
                 <p>DISEÑOS</p>
                 <ul>
-                    <li>Casamientos</li>
-                    <li>Cumpleaños</li>
-                    <li>Graduaciones</li>
+                    <li><a href="#prueba">Casamientos</a></li>
+                    <li><a href="#cumpleanos">Cumpleaños</a></li>
+                    <li><a href="#graduaciones">Graduacion</a></li>
                 </ul>
             </div>
             <div class="col-4 col-md-3 section_footer sec_foot">      
                 <p>SECCIONES</p>
                 <ul>
-                    <li>Opciones</li>
-                    <li>Beneficios</li>
-                    <li>Precios</li>
+                    <li><a href="#opciones">Opciones</a></li>
+                    <li><a href="#beneficios">Beneficios</a></li>
+                    <li><a href="#precios">Precios</a></li>
                 </ul>
             </div>
             <div class="col-12 col-md-3 section_footer">
                 <div class="cont_icons">
-                    <img class="icon_footer" src="/media/instagram.png" alt="">
-                    <img class="icon_footer" src="/media/facebook.png" alt="">
-                    <img class="icon_footer" src="/media/whatsapp.png" alt="">
-                    <img class="icon_footer" src="/media/gmail.png" alt="">
+                    <a href="http://www.instagram.com/doucediseno">
+                      <img class="icon_footer" src="/media/instagram.png" alt="">
+                    </a>
+                    <a href="">
+                      <img class="icon_footer" src="/media/facebook.png" alt="">
+                    </a>
+                    <a href="http://we.me/3364198645">
+                      <img class="icon_footer" src="/media/whatsapp.png" alt="">
+                    </a>
+                    <a href=""><img class="icon_footer" src="/media/gmail.png" alt="">
+                    </a>
                 </div>
                 <a class="mail_footer" href="">doucediseno@gmail.com</a>
             </div> 
