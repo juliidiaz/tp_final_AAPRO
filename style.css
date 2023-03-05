@@ -1,8 +1,9 @@
     /*HEADER*/
 body {
     background-color: #EFEDE7;}
+
 .header_gral {
-    background-image: url(/media/celular.png);
+    background-image: url(/media/celular.PNG);
     background-size:cover;
     background-repeat: no-repeat;
     display: flex;
@@ -10,7 +11,7 @@ body {
     justify-content: flex-start;
     align-items: center;
     text-align: center;
-    height: 700px;}
+    height: 475px;}
 
 .logo {
     height: 30%;
@@ -25,6 +26,10 @@ body {
     font-family: caveat;
     font-size:x-large;}
 
+    /*CARROUSEL*/
+.carrousel_gral {
+    height: 50px;}
+
     /*OPCIONES*/
 
 .container_opciones {
@@ -35,11 +40,11 @@ body {
     text-align: center;}
 
 .img_opciones {
-    width:40%;}
+    width:30%;}
 
 .text_opciones {
     font-family: special elite;
-    font-size:22px;
+    font-size:15px;
     font-weight: bold;
     text-align: center;
     width: 55%;}
@@ -74,30 +79,29 @@ body {
     height: 100%;}
 
 .img_descrip_icon {
-    width: 20%;}
+    height: 100%;}
 
+.boton_modal {
+    border: none;
+    width:30%;
+    height: 20%;
+    background-color:transparent;}
 
-/*DISEÑOS 1*/
+.boton_modal_color {
+    background-color: lightpink;
+    border: none;}
 
-.cont_gral_disenos {
-    background-color: #EFEDE7;
+    /*DISEÑOS*/
+.diseno_gral{
+    height: 680px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;}
-.card-body {
-    text-align: center;}
-.card-title {
-    font-family: caveat;
-    font-size: xx-large;}
-.card_propio {
-    margin-bottom: 10px;
-    margin-top: 10px;
-    width: 85%;}
 
-    /*DISEÑOS 2*/
 .disenos_cont {
-    height: 350px;
+    height: 95%;
+    width: 70%;
     background-repeat: no-repeat;
     background-position-y: center;
     background-position-x: center;
@@ -106,14 +110,57 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
-    margin-bottom: 20px;}
+    transition: 2s;}
+
+.card-title {
+    font-family: caveat;
+    font-size: xx-large;}
+
 .dis_1 {
     background-image: url(/media/cas.png);}
+
 .dis_2 {
     background-image: url(/media/quin.png);}
+
 .dis_3 {
     background-image: url(/media/gradu2.png);}
+
+    .disenos_cont:hover{
+        filter: grayscale(95%);
+        transition: 2s;
+        height: 100%;
+        width: 100%;}
+
+    /*PRECIO*/
+
+.cont_precio_gral {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;}
+
+.cont_precio {
+    height: 87%;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 6px 20px;}
+
+.base {
+    background-color: gainsboro;}
+
+.combo {
+    background-color: lightseagreen;}
+
+.cont_precio p {
+    text-align: center;
+    margin-left: 15%;
+    margin-right: 15%;
+    font-family: special elite;}
+
 
     /*FOOTER*/
 
@@ -127,17 +174,31 @@ body {
 
 .sec_foot {
     font-size: x-small;
-    text-align: start;}
-    
+    text-align: start;
+    padding-top: 20px;}
+
 .logo_footer{
     height:95px;}
-.icon_footer {
- height: 30px;
-}
 
-    /*MEDIA QUERY*/
-@media (min-width:768px) and (max-width:1024px) {
+.icon_footer {
+    height: 30px;}
+    
+    .mail_footer:link {
+        text-decoration: none;
+        color: black;}
+    .mail_footer:visited {
+        text-decoration: none;
+        color: black;}
+    .section_footer a:link {
+        text-decoration: none;
+        color: black;}
+    .section_footer a:visited {
+        text-decoration: none;
+        color: black;}
+    
  
+    /*MEDIA QUERY*/
+@media (min-width:768px) and (max-width:1024px) { 
         .text_descrip{
             width: 90%;}
         .descrip_2 {
@@ -153,5 +214,16 @@ body {
     .descrip_1 {
         justify-content: center;}
     .card_propio {
-            width: 100%;}
-    .sec_foot {padding-top: 20px;}}
+        width: 100%;}
+    .sec_foot {
+        padding-top: 20px;}
+    .diseno_gral{
+        flex-direction: row;
+        height: 300px;}
+    .disenos_cont {
+        height: 95%;
+        width: 30%;}
+        .disenos_cont:hover{
+            height: 100%;
+            width: 32%;
+        }}
